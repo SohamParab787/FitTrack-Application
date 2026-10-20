@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textView_heading"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#F4743B"
+        android:fontFamily="@font/bebas_neue"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:text="FitTrack"
+        android:textColor="#eeeded"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_diet_heading"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:background="#F4743B"
+        android:fontFamily="@font/bebas_neue"
+        android:gravity="center"
+        android:text="Select difficulty level"
+        android:textColor="#eeeded"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_heading" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="309dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_diet_heading">
+
+        <Button
+            android:id="@+id/beginer_button"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#F4743B"
+            android:text="Beginer"
+            android:textColor="#eeeded" />
+
+        <Space
+            android:layout_width="300dp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/intermediate_button"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#F4743B"
+            android:text="Intermediate"
+            android:textColor="#eeeded" />
+
+        <Space
+            android:layout_width="300dp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/advance_button"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#F4743B"
+            android:text="Advance"
+            android:textColor="#eeeded" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

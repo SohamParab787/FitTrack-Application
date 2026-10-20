@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeded">
+
+    <!-- Replace "10" with the total number of workouts -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4743B"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/difficulty_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/bebas_neue"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:text="Beginner level"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp" />
+
+
+    </LinearLayout>
+
+    <!--
+        <TextView
+            android:id="@+id/timemode_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/workoutNameTextView"
+            android:layout_centerHorizontal="true"
+            android:text="Press start button"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="473dp" />
+    -->
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="393dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/workoutNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:text="Pushup"
+        android:textColor="#F4743B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoView" />
+
+    <TextView
+        android:id="@+id/workoutCountTextView"
+        android:layout_width="85dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/workoutNameTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textColor="#F4743B"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workoutNameTextView" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:layout_above="@id/workoutCountTextView"
+        android:layout_below="@+id/workoutNameTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textColor="#F4743B"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workoutCountTextView" />
+
+    <Button
+        android:id="@+id/startPauseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/workoutCountTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="125dp"
+        android:backgroundTint="#F4743B"
+        android:text="Start"
+        android:textColor="#eeeded"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timerTextView" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startPauseButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginEnd="59dp"
+        android:backgroundTint="#F4743B"
+        android:text="Reset"
+        android:textColor="#eeeded"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/startPauseButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/startPauseButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

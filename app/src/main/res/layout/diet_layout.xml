@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#Ffffff">
+
+    <TextView
+        android:id="@+id/textView_heading"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:background="#F4743B"
+        android:fontFamily="@font/bebas_neue"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:text="FitTrack"
+        android:textColor="#eeeded"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_diet_heading"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#F4743B"
+        android:fontFamily="@font/bebas_neue"
+        android:gravity="center"
+        android:text="Diet"
+        android:textColor="#eeeded"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_heading" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="354dp"
+        android:layout_height="586dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="35dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="#eeeded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_diet_heading">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/scrollView_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F4743B"
+                android:textSize="20sp"
+                android:text="1. A fitness diet focuses on consuming a well-balanced and nutritious selection of foods to support physical activity and overall health." />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F4743B"
+                android:textSize="20sp"
+                android:text="2. Include a variety of whole foods in your diet, such as lean proteins, fruits, vegetables, whole grains, and healthy fats." />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Prioritize nutrient-dense foods that are rich in vitamins, minerals, and other beneficial compounds."
+                android:textColor="#F4743B"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F4743B"
+                android:textSize="20sp"
+                android:text="4. Limit processed and sugary items in your diet, as they tend to be low in nutrients and high in calories." />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F4743B"
+                android:textSize="20sp"
+                android:text="5. Incorporate lean protein sources, such as poultry, fish, tofu, legumes, and low-fat dairy, to support muscle growth and repair." />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F4743B"
+                android:textSize="20sp"
+                android:text="6. Consume a variety of colorful fruits and vegetables to obtain a wide range of antioxidants, vitamins, and minerals." />
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F4743B"
+                android:textSize="20sp"
+                android:text="7. Include whole grains like quinoa, brown rice, oats, and whole wheat bread to provide sustained energy and dietary fiber." />
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F4743B"
+                android:textSize="20sp"
+                android:text="8. Incorporate healthy fats from sources such as avocados, nuts, seeds, and olive oil to support overall health and nutrient absorption." />
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F4743B"
+                android:textSize="20sp"
+                android:text="9. Stay properly hydrated by drinking an adequate amount of water throughout the day, especially before, during, and after exercise." />
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F4743B"
+                android:textSize="20sp"
+                android:text="10. Adjust your water intake based on factors such as body weight, activity level, and climate." />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
